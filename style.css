@@ -1,0 +1,28 @@
+
+
+.container {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+section {
+  border: 2px solid rgb(235, 80, 80);
+  margin: 5px;
+}
+article {
+  border: 2px solid rgb(0, 255, 42);
+  margin: 5px;
+}
+footer  {
+  border: 2px solid rgb(47, 0, 255);
+  margin: 5px;
+}
+nav {
+  border: 2px solid rgb(0, 162, 255);
+  margin: 5px;
+}
+aside {
+  border: 2px solid rgb(247, 0, 255);
+  margin: 5px;
+}
