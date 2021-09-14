@@ -147,9 +147,51 @@
   white-space: nowrap;
 }
 
+/* Зум эффект*/
+
+.container-scale {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  
+}
 
 
+.image-scale {
+  display: block;
+  width: 100%;
+  height: auto;
+ 
+}
 
+.scale {
+  position: absolute;
+  bottom: 0;
+  left:0 ;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transform: scale(0);
+  transition: .5s ease;
+  background-color: #F77400;
+ 
+}
+
+.container-scale:hover .scale {
+  transform: scale(1);
+}
+
+
+.text-scale {
+  color: #fff;
+  font-size: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
 
 
 
@@ -173,6 +215,9 @@
   .container-slide {
     width: 45%;
   }
+  .container-scale {
+    width: 45%;
+  }
 }
 
 
@@ -181,6 +226,9 @@
     width: 20%;
   }
   .container-slide {
+    width: 20%;
+  }
+  .container-scale {
     width: 20%;
   }
 }
