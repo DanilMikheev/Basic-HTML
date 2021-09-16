@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(24, 24, 24);
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+ 
+ 
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 940px;
+  padding-top: 30px;
+}
+
+.cards__body {
+  display: flex;
+  max-width: 240px;
+  flex-direction: column;
+  box-shadow: 0px 5px 10px 2px rgba(48, 54, 92, 0.2);
+  background-color: #fff;
+  margin: 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.cards__body:hover {
+  
+  
+  transform:translateY(-5px) scale(1.1);
+ 
+}
+.cards__header{
+  
+  height: 100%;
+}
+
+
+
+.cards__img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+
+.cards__middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  text-align: center;
+}
+
+
+
+.cards__title {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cards__title::before {
+  font-size: 12px;
+  color: #FF076F;
+  padding-top: 15px;
+}
+
+.cards__body:nth-child(1) .cards__title::before{
+  
+  content: '4 day ago';
+  
+}
+.cards__body:nth-child(2) .cards__title::before{
+  
+  content: '1 week ago';
+  color: #FE4B0A;
+}
+
+.cards__body:nth-child(3) .cards__title::before{
+  
+  content: '3 week ago';
+  color: #01B03B;
+}
+
+
+
+.cards__text {
+  padding: 20px 20px 30px 20px;
+  color: #BFBCBB;
+  font-size: 14px;
+}
+
+.cards__footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #FF076F;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top: 2px solid #E00866;
+}
+
+.cards__body:nth-child(2) .cards__footer{
+  background-color: #FE4B0A;
+  border-top: 2px solid #F14707;
+}
+.cards__body:nth-child(2) .border {
+  border-right: 1px solid #F14707;
+}
+
+.cards__body:nth-child(3) .cards__footer{
+  background-color: #01B03B;
+  border-top: 2px solid #009227;
+}
+
+.cards__body:nth-child(3) .border {
+  border-right: 1px solid #009227;
+}
+
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  color: #fff;
+  position: relative;
+  
+}
+
+.cards__item::after {
+  font-size: 10px;
+  text-transform: uppercase;
+  
+}
+
+
+.cards__item:nth-child(1)::after{
+  content: 'read';
+ 
+}
+.cards__item:nth-child(3)::after{
+  content: 'views';
+  
+}
+.cards__item:nth-child(5)::after{
+  content: 'comments';
+ 
+}
+
+.border{
+  border-right: 1px solid #E00866;
+}
