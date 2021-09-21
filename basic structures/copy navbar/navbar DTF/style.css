@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+
+
+
+  .header {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #d9f5ff;
+    color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+
+  .header__item {
+  display: flex;
+  flex-shrink: 0;
+ }
+
+ .spaced {
+   
+   background-color: #fff;
+   display: inline-flex;
+   color: #000;
+   height: 40px;
+   /*padding: 12px;*/
+   border-radius: 8px 8px 8px 8px;
+   font-size: 16px;
+   border: 1px solid #bdd5de;
+   outline: none;
+ }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+ 
+    outline: none;
+}
+.btn-label{
+  white-space: nowrap;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  color: #000;
+}
+.btn-down{
+ /* background-color: #2196F3;*/
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 8px 8px 0px;
+  position: relative;
+  display:flex;
+}
+.dropdown:before {
+  content: '';
+  width: 1px;
+  position: absolute;
+  left: 1px;
+  top: 8px;
+  bottom: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    top: 100%;
+    margin-top: 8px;
+    right: 0;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    align-items: center;
+    /*padding: 12px 16px;*/
+    text-decoration: none;
+    display: flex;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  
+    display: flex;
+  
+   
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/*.btn:hover, .dropdown:hover .btn  {
+    background-color: #0b7dda;
+}
+*/
+
+.dropdown--icon {
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  padding: 0 8px;
+}
+
+.dropdown--label {
+  padding: 12px 16px 12px 0;
+}
+
+.header__spacer {
+  margin: auto;
+}
+.header-burger {
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+}
+.header__item--logo {
+  margin-right: 24px;
+
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  position: relative;
+  top: 22%;
+  
+}
+.header__item--spaced {
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header__item--search {
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 320px;
+  align-items: center;
+}
+
+.search-field {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  color: #fff;
+  
+}
+.search__input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.search__input {
+  
+  border: none;
+  outline: none;
+  padding: 0 0 0 35px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.05);
+  
+}
+
+ .icon--search {
+  position: absolute;
+  left: 13px;
+  top: 30%;
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.head-notifies{
+  display: flex;
+  align-items: center;
+  
+}
+.head-notifies__toggle {
+  cursor: pointer;
+}
+.header-user-login {
+  cursor: pointer;
+}
+.header-user-login:hover{
+  color: #4da0da;
+  fill: #4da0da;
+}
+
+.head-notifies__toggle:hover{
+  color: #4da0da;
+  fill: #4da0da;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+}
+
+.header-user-login{
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+  padding-right: 40px;
+}
+
+.header-user-login .icon--user {
+  margin-right: 12px;
+}
+.btn-label.active {
+  display: none;
+}
+
+@media (max-width: 767px){
+  .btn-label {
+    display: none;
+  }
+  .btn-label.active {
+    display: flex;
+  }
+  .header__item--search {
+    flex-grow: 0;
+   }
+}
+
+
+
+
+
+@media (max-width: 650px){
+  .search {
+    display: none;
+  }
+  .header__item--spaced {
+    display: none;
+  }
+  
+ 
+}
