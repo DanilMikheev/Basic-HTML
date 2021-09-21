@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tabs js</title>
+</head>
+
+<body>
+  <div class="content">
+    <div class="tabs">
+      <button class="tabs__links" onclick="openCity(event, 'Tab one')" id="defaultOpen">Tab one</button>
+      <button class="tabs__links" onclick="openCity(event, 'Tab two')">Tab two</button>
+      <button class="tabs__links" onclick="openCity(event, 'Tab three')">Tab three</button>
+    </div>
+    <div id="Tab one" class="tabs__content">
+      <p>1 London.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis eaque voluptate ad illo
+        nobis, sed
+        magni nostrum hic soluta accusantium necessitatibus vel quo eius quibusdam. Quo expedita quibusdam illo.</p>
+    </div>
+    <div id="Tab two" class="tabs__content">
+      <p>2 Tokyo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis eaque voluptate ad illo
+        nobis, sed
+        magni nostrum hic soluta accusantium necessitatibus vel quo eius quibusdam. Quo expedita quibusdam illo.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis eaque voluptate ad illo
+        nobis, sed
+        magni nostrum hic soluta accusantium necessitatibus vel quo eius quibusdam. Quo expedita quibusdam illo.</p>
+    </div>
+    <div id="Tab three" class="tabs__content">
+      <p>3 Paris.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis eaque voluptate ad illo
+        nobis, sed
+        magni nostrum hic soluta accusantium necessitatibus vel quo eius quibusdam. Quo expedita quibusdam illo.</p>
+    </div>
+  </div>
+
+
+
+  <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
